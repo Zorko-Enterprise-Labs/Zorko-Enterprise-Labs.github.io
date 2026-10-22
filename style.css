@@ -65,6 +65,19 @@ nav a[aria-current="page"] {
     border-bottom-color: #8fd0f7;
 }
 
+nav a.donate {
+    float: right;
+    margin-right: 0;
+    padding: 1px 10px;
+    border: 1px solid #8fd0f7;
+    border-radius: 3px;
+}
+
+nav a.donate:hover {
+    background: #8fd0f7;
+    color: #191919;
+}
+
 h1 {
     margin: 0;
     color: #8fd0f7;
@@ -189,6 +202,11 @@ footer a {
     nav a {
         margin-right: 18px;
         padding: 12px 0 10px;
+    }
+
+    nav a.donate {
+        margin: 7px 0;
+        padding: 4px 10px;
     }
 
     h2 {
