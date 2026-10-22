@@ -14,6 +14,14 @@ main {
     border: 1px solid #111;
     background: #303030;
     box-shadow: 0 2px 8px #111;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: calc(100vh - 70px);
+}
+
+main > section:last-of-type {
+    flex-grow: 1;
 }
 
 header {
@@ -147,4 +155,63 @@ footer a {
 
 .note strong {
     color: #8fd0f7;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    main {
+        margin: 0;
+        padding: 0 16px 24px;
+        border: 0;
+        box-shadow: none;
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    header {
+        margin: 0 -16px;
+        padding: 18px 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        margin: 0 -16px;
+        padding: 0 16px;
+    }
+
+    nav a {
+        margin-right: 18px;
+        padding: 12px 0 10px;
+    }
+
+    h2 {
+        margin-top: 24px;
+    }
+
+    li {
+        padding: 12px;
+    }
+
+    .more {
+        display: inline-block;
+        padding: 10px 0;
+    }
+
+    footer {
+        margin: 24px -16px -24px;
+        padding: 6px 16px 14px;
+    }
+
+    footer a {
+        display: inline-block;
+        padding: 10px 0;
+        overflow-wrap: anywhere;
+    }
 }
