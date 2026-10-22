@@ -138,3 +138,13 @@ footer {
 footer a {
     margin-right: 18px;
 }
+
+.note {
+    border: 1px dashed #555;
+    background: transparent;
+    color: #aaa;
+}
+
+.note strong {
+    color: #8fd0f7;
+}
