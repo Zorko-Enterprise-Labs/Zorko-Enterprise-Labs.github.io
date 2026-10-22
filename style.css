@@ -109,10 +109,61 @@ li p {
     margin: 4px 0 8px;
 }
 
+summary {
+    position: relative;
+    padding-right: 28px;
+    cursor: pointer;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "+";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    color: #8fd0f7;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+details[open] summary::after {
+    content: "\2212";
+}
+
+summary .title {
+    display: block;
+    color: #76b7e8;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+summary:hover .title {
+    color: #fff;
+}
+
+summary:focus-visible {
+    outline: 2px solid #8fd0f7;
+    outline-offset: 4px;
+}
+
+summary .summary {
+    display: block;
+    margin: 4px 0 8px;
+}
+
 li .bio {
-    margin: 0 0 10px;
-    color: #aaa;
-    font-size: 14px;
+    margin: 12px 0 8px;
+    padding-top: 12px;
+    border-top: 1px solid #3a3a3a;
+    color: #bbb;
+}
+
+li .more {
+    font-size: 15px;
 }
 
 a {
