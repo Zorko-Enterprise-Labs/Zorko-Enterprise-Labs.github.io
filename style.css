@@ -109,6 +109,12 @@ li p {
     margin: 4px 0 8px;
 }
 
+li .bio {
+    margin: 0 0 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
 a {
     color: #76b7e8;
 }
