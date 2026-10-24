@@ -217,6 +217,29 @@ footer a {
     margin-right: 18px;
 }
 
+.about p {
+    margin: 0 0 18px;
+}
+
+.about figure {
+    margin: 0;
+    padding: 6px;
+    border: 1px solid #171717;
+    background: #252525;
+}
+
+.about img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about figcaption {
+    margin-top: 6px;
+    color: #888;
+    font-size: 12px;
+}
+
 .note {
     border: 1px dashed #555;
     background: transparent;
